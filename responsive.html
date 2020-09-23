@@ -5,8 +5,8 @@
         <meta charset="utf-8" />
         <title>parthsarthiprasad</title>
         <meta content="width=device-width, initial-scale=1" name="viewport" />
-        <meta content="Webflow" name="generator" />
-        <link href="https://uploads-ssl.webflow.com/5d9d9b94bce4557fd6335ce9/css/iphone-11-pro.webflow.8e31a0af7.css" rel="stylesheet" type="text/css" />
+        <link href="./webflowstyle.css" rel="stylesheet" type="text/css" />
+
         <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif]-->
         <link rel="stylesheet" type="text/css" href="ballstyle.css">
         <script type="text/javascript">
@@ -34,8 +34,10 @@
                 -moz-osx-font-smoothing: grayscale;
             }
         </style>
-        <script src='https://unpkg.com/github-alike-calendar@0.0.1/dist/github-alike-calendar.js'></script>
+        <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+        <link rel="stylesheet"
+      href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
         <script type="text/javascript" src="./bouncingball.js"></script>
     </head>
     <body class="body">
@@ -61,9 +63,6 @@
 			        <p id="impress">want to <em>skip?</em></p>
 			        <p id="resume">here's my <a href="./public/parthsarthiprasad_resume.pdf">resume</a>.</p>
 			        <p id="other">
-                    
-                    <github-alike-calendar username="part" responsive="true"></github-alike-calendar>
-                    
                 </div>
                 <div class="hero-shadow"></div>
                 <div class="hero-frame-bottom"></div>
@@ -75,10 +74,19 @@
                         <div class="intro-content">
                             <h3 class="intro-subhead">About.</h3>
                             <p class="intro-paragraph">
-                                Pursuing Computer Science Enginnering from NSIT(Netaji Subhas Institute of technology),Delhi(2018-22)
+                                3rd year,CSE Undergrad, <a href="http://www.nsit.ac.in/" target="_blank">NSIT Delhi.</a><br/>
+                                Interest and experience in<br/> Web Development(MERN)<br/> Data Visualisation and analysis<br/>IoT<br/><br/>
                             </p>
-                            <p class="intro-pricing">From <span>$24.95/mo.</span> or <span class="text-span-2">$599 with trade-in.*</span></p>
-                            <div class="cta-links"><a href="#" class="cta-link left">Watch the keynote</a><a href="#" class="cta-link">Watch the film</a></div>
+                            <github-alike-calendar username="parthsarthiprasad" responsive="true"></github-alike-calendar>
+                            <p class="contributions-paragraph">
+                                Contributor author in journal:<em>IoTBC-2020 (2020). CRC Press Acceptanced Manuscript. Blockchain
+                                Technology for Data Privacy Management” (Series: Advances in Intelligent Decision-Making, Systems Engineering, and Project Management,
+                                CRC Press, Taylor Francis, USA</em>
+                            </p> 
+                            <div class="github-calendar">
+                                <!-- Loading stuff -->
+                                Loading the data just for you.
+                            </div>
                         </div>
                         <div class="hero-frame-bottom"></div>
                     </div>
@@ -338,6 +346,9 @@
             integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
             crossorigin="anonymous"
         ></script>
+        <script>
+            GitHubCalendar(".github-calendar", "parthsarthiprasad", { responsive: true });
+        </script>
         <script src="https://uploads-ssl.webflow.com/5d9d9b94bce4557fd6335ce9/js/webflow.85d19b953.js" type="text/javascript"></script>
         <!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
     </body>
