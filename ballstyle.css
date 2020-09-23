@@ -1,0 +1,58 @@
+
+
+.main
+{
+	height: 100%;
+	width: 100%;
+	display: table;
+}
+
+.hero-image 
+{   
+    color: white;
+	font-size: 30px;
+	font-family: 'Ubuntu';
+	height: 100%;
+	margin: 0;
+	/* display: table-cell; */
+	height: 100%;
+    vertical-align: middle;
+    text-align: center;
+    margin: 5px;
+    display: :flex;;
+}
+
+
+#hi 
+{
+	font-size: 70px;
+	margin: 0;
+}
+
+#me
+{
+	font-size: 40px;
+	margin: 0;
+}
+
+#bounce 
+{   flex: 1;
+    display: flex;
+    justify-content: center;
+	height: 30%;
+}
+
+#bounce:first-child > span { margin-right: auto; }
+
+#bounce:last-child  > span { margin-left: auto;  }
+
+#ball
+{
+    /* display: table; */
+    margin: 0 auto;
+    position: absolute;
+	background-color: white;
+	height: 20px;
+	width: 20px;
+	border-radius: 100%;
+}
