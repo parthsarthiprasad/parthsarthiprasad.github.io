@@ -207,7 +207,10 @@ body {
 }
 
 .hero-image {
-
+    /* font-size: 30px;
+	font-family: 'Ubuntu';
+	height: 100%;
+	margin: 0; */
   position: absolute;
   left: 0%;
   top: 0%;
@@ -250,7 +253,7 @@ body {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #000;
+  background-color: #111;
 }
 
 .github-calendar {

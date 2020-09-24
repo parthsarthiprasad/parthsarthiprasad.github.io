@@ -25,26 +25,25 @@ render = function() {
 			firstvel = -1 * v;
 		v = firstvel;
 	}
-	ball.style.top = Math.min(ypos, btop) + 'px';
+	ball.style.top = Math.min(ypos, bottom) + 'px';
 	v += a;
 	ypos += v;
 }
 
-
 window.onload = function() {
 
 	ball = document.getElementById('ball');
-
     bd = document.getElementById('bounce').getBoundingClientRect();
     console.log(bd);
-	btop = bd.bottom - bd.height;
-	bottom = bd.bottom;
-    ypos = bd.top;
     radius = ball.clientHeight;
+	btop = bd.top-bd.height;
+	bottom = bd.bottom;
+    ypos = btop - radius;
+   
 
     ball.style.left = bd.left + (bd.right - bd.left)/2 ;
-    ball.style.bottom = bd.bottom;
-	ball.style.top = ypos;
-
+    // ball.style.bottom = bd.bottom;
+	ball.style.top = btop;
+    
 	refreshID = setInterval(render, 1000/FPS);
 }

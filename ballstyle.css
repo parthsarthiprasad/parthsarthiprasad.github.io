@@ -9,7 +9,7 @@
 
 .hero-image 
 {   
-    /* color: white; */
+    color: white;
 	font-size: 30px;
 	font-family: 'Ubuntu';
 	height: 100%;
@@ -25,21 +25,42 @@
 
 #hi 
 {
-	font-size: 70px;
+	font-size: 54px;
 	margin: 0;
 }
 
 #me
 {
-	font-size: 40px;
+	font-size: 24px;
 	margin: 0;
 }
 
+#txt1
+{
+    font-size: 16px;
+}
+
+#txt2
+{
+    font-size: 16px;
+}
+
+
+#impress
+{
+    font-size: 16px;
+}
+
+#resume
+{
+    font-size: 16px;
+}
 #bounce 
-{   flex: 1;
+{   
+    flex: 1;
     display: flex;
     justify-content: center;
-	height: 30%;
+	height: 10%;
 }
 
 #bounce:first-child > span { margin-right: auto; }
@@ -52,7 +73,7 @@
     margin: 0 auto;
     position: absolute;
 	background-color: white;
-	height: 20px;
-	width: 20px;
+	height: 10px;
+	width: 10px;
 	border-radius: 100%;
 }
