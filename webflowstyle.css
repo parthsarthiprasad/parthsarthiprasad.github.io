@@ -173,9 +173,45 @@ body {
 .hero {
   position: relative;
   z-index: 10;
-  padding: 30px 30px 0px;
+  /* padding: 30px 30px 0px; */
   background-color: #111;
 }
+
+#hi {
+    font-size: 76px;
+    margin: 0;
+  }
+  #me{
+    font-size: 54px;
+    margin: 0;
+  }
+  #txt1{
+    font-size: 24px;
+  }
+  #txt2{
+    font-size: 24px;
+  }
+  #impress{
+    font-size: 24px;
+  }
+  #resume{
+    font-size: 24px;
+  }
+  #bounce {   
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    height: 30%;
+  }
+  #ball{
+    /* display: table; */
+    margin: 0 auto;
+    position: absolute;
+	background-color: white;
+	height: 20px;
+	width: 20px;
+	border-radius: 100%;
+  }
 
 .hero-video {
   position: absolute;
@@ -212,17 +248,23 @@ body {
 	height: 100%;
 	margin: 0; */
   position: absolute;
+  font-family: 'Ubuntu';
   left: 0%;
   top: 0%;
   right: 0%;
   bottom: 0%;
+  margin: 5px;
+  vertical-align: middle;
+  text-align: center;
   z-index: 6;
   overflow: hidden;
   padding-top: 20vh;
   padding-right: 22%;
   padding-left: 22%;
   background-color: #000;
+  
 }
+    
 
 .hero-content {
   position: relative;
@@ -267,7 +309,7 @@ body {
   bottom: 0%;
   z-index: 10;
   height: 30px;
-  background-color: #111;
+  background-color: #000;
 }
 
 .intro-content {
@@ -1437,6 +1479,35 @@ body {
 }
 
 @media screen and (max-width: 991px) {
+  
+  #hi {
+    font-size: 76px;
+    margin: 0;
+  }
+  #me{
+    font-size: 54px;
+    margin: 0;
+  }
+  #txt1{
+    font-size: 36px;
+  }
+  #txt2{
+    font-size: 36px;
+  }
+  #impress{
+    font-size: 36px;
+  }
+  #resume{
+    font-size: 36px;
+  }
+  #bounce {   
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    height: 10%;
+  }
+    
+    
   .nav {
     display: block;
   }

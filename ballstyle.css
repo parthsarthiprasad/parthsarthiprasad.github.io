@@ -7,23 +7,10 @@
 	display: table;
 }
 
-.hero-image 
-{   
-    color: white;
-	font-size: 30px;
-	font-family: 'Ubuntu';
-	height: 100%;
-	margin: 0;
-	/* display: table-cell; */
-	height: 100%;
-    vertical-align: middle;
-    text-align: center;
-    margin: 5px;
-    display: :flex;;
-}
 
 
-#hi 
+
+/* #hi 
 {
 	font-size: 54px;
 	margin: 0;
@@ -61,11 +48,8 @@
     display: flex;
     justify-content: center;
 	height: 10%;
-}
+} */
 
-#bounce:first-child > span { margin-right: auto; }
-
-#bounce:last-child  > span { margin-left: auto;  }
 
 #ball
 {
