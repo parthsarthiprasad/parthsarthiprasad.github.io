@@ -330,7 +330,7 @@ body {
   margin-top: 45px;
   margin-bottom: 50px;
   color: #aaa;
-  font-size: 28px;
+  font-size: 22px;
   line-height: 1.125;
   font-weight: 600;
   /* text-align: center; */
@@ -341,7 +341,7 @@ body {
 .contributions-paragraph {
     
     color: #aaa;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 1.125;
     font-weight: 600;
     /* text-align: center; */
@@ -434,9 +434,29 @@ body {
 }
 
 .hero-grid-image-1 {
-  height: 100%;
+  /* height: 100%; */
+  object-fit: fill;
+
   padding-top: 60px;
-  padding-left: 60px;
+  padding-left: 10%;
+}
+.hero-grid-image-1:hover {
+    opacity: 0.3;
+}
+
+.hero-grid-image-1-overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+}
+.hero-grid-image-1:hover .hero-grid-image-1-overlay{
+    opacity: 1;
 }
 
 .hero-grid-image-2 {
@@ -537,14 +557,14 @@ body {
 
 .img-wrapper-camera-glass {
   overflow: hidden;
-  padding-top: 30vh;
+  /* padding-top: 30vh; */
   background-color: #000;
 }
 
 .camera-glass-image {
   width: 100%;
   height: 100%;
-  background-image: url("https://uploads-ssl.webflow.com/5d9d9b94bce4557fd6335ce9/5d9dbddd916a65ffea9caba9_hero_gallery_camera_glass__bhv9k5jrv1oy_large_2x.jpg");
+  background-image: url("./public/ezgif.com-optimize.gif");
   background-position: 50% 0%;
   background-size: cover;
 }
@@ -1605,6 +1625,14 @@ body {
   .cameras {
     display: block;
   }
+
+  .camera-glass-image {
+    width: 100%;
+    height: 100%;
+    background-image: url("./public/ezgif.com-optimize-cropped1k.gif");
+    background-position: 50% 0%;
+    background-size: cover;
+  }
   .camera-hero-lens-container {
     left: -162px;
     width: 1141px;
@@ -2020,7 +2048,7 @@ body {
   .intro-paragraph {
     margin-top: 15px;
     margin-bottom: 20px;
-    font-size: 24px;
+    font-size: 20px;
     text-align: left;
   }
   .intro-pricing {
