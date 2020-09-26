@@ -436,9 +436,8 @@ body {
 .hero-grid-image-1 {
   /* height: 100%; */
   object-fit: fill;
-
+  padding-left: auto;
   padding-top: 60px;
-  padding-left: 10%;
 }
 
 
@@ -451,19 +450,20 @@ body {
     height: 100%;
     width: 100%;
     padding-top: 60px;
-    padding-left: 10%;
+    /* padding-left: 10%; */
     font-size: 30px;
     color: #fff;
-    opacity: 0;
+    opacity: 1;
     transition: .5s ease;
     word-wrap: break-word;
+    display: none;
 }
 
 .hero-grid-image-1:hover {
     opacity:0.3;
 }
 .hero-grid-image-1:hover #hero-grid-image-1-overlay{
-    opacity: 1;
+    display: block;
 }
 
 .hero-grid-image-2 {
@@ -480,8 +480,8 @@ body {
 
 .hero-gtid-image-2 {
   width: 100%;
-  height: 100%;
-  background-image: url("./public/woman-is-having-video-call-with-man_10045-302-removebg-preview.png");
+  height: 150%;
+  background-image: url("./public/IMG_20190929_1337451.png");
   background-position: 50% 100%;
   background-size: cover;
 }
