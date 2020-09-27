@@ -19,13 +19,14 @@ firstvel = -1;
 render = function() {
 	// console.log("in render()")
 	// console.log(bottom - ypos);
+	ball.style.top = Math.min(ypos, bottom) + 'px';
 	if (ypos + radius >= bottom)
 	{
 		if (firstvel == -1)
 			firstvel = -1 * v;
 		v = firstvel;
 	}
-	ball.style.top = Math.min(ypos, bottom) + 'px';
+	
 	v += a;
 	ypos += v;
 }
