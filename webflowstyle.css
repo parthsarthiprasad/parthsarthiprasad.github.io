@@ -1545,10 +1545,6 @@ body {
   font-weight: 600;
 }
 
-.bottom-right-icon{
-    display: flex;
-}
-
 @media screen and (max-width: 991px) {
   
   #hi {
