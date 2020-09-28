@@ -296,7 +296,10 @@ body {
   align-items: center;
   background-color: #111;
 }
-
+ 
+.contrib-number {
+  color: #888 !important;
+}
 .github-calendar {
     color: #fff;
 }
